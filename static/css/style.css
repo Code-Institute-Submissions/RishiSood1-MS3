@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css?family=Exo:100,200,300,400,500,600,700|Exo:100,200,300,400,500,600,700');
+
+/*----------------------------------------header/navbar*/
+
+header {
+    background-color: #00008B;
+    min-height: 120px;
+}
+
+.bg-light {
+    background-color: transparent !important;
+}
+
+h2 {
+    font-family: "Exo", sans-serif;
+    color: white;
+}
+
+a.nav-pagelink  {
+    font-family: "Exo", sans-serif; 
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 20px;
+}
+
+/*----------------------------------------Footer*/
+
+footer {
+    background-color: #00008B;
+    min-height: 120px;
+}
+
+p {
+    font-family: "Exo", sans-serif;
+    font-size: 15px;
+    text-align: center;
+    font-weight: 500;
+    color: white;
+}
+
+.social-media {
+    padding-bottom: 15px;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    width: 50px;
+    height: 50px;
+}
