@@ -26,12 +26,19 @@ a.nav-pagelink  {
 
 /*----------------------------------------Footer*/
 
+.card-header {
+    font-family: "Exo", sans-serif; 
+}
+
+
+/*----------------------------------------Footer*/
+
 footer {
     background-color: #00008B;
     min-height: 120px;
 }
 
-p {
+.Contact {
     font-family: "Exo", sans-serif;
     font-size: 15px;
     text-align: center;

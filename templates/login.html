@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="card-body col d-flex justify-content-center">
+    <div class="card text-center" style="width: 18rem;">
+        <div class="card-body">
+            <h5 class="card-title">Login</h5>
+            <form method="POST" action="{{ url_for('login') }}">
+                <div class="form-group">
+                    <label for="tEmail1">Email address</label>
+                    <input type="email" class="form-control" id="tEmail1" aria-describedby="emailHelp">
+                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+                <div class="form-group">
+                    <label for="Password">Password</label>
+                    <input type="password" class="form-control" id="Password">
+                </div>
+            </form>
+            <a href="#" class="btn btn-primary">Submit</a>
+            <p class="center-align">New Here? <a href="#">Sign Up</a></p>
+        </div>
+    </div>
+</div> 
+
+{% endblock %}
