@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Exo:100,200,300,400,500,600,700|Exo:100,200,300,400,500,600,700');
 
+#content {
+    min-height: calc(120vh - 300px);
+}
+
 /*----------------------------------------header/navbar*/
 
 header {
@@ -11,7 +15,17 @@ header {
     background-color: transparent !important;
 }
 
-h2 {
+.headername {
+    font-family: "Exo", sans-serif;
+    font-size: 40px;
+    margin-right: 7px;
+    margin-left: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+h3 {
     font-family: "Exo", sans-serif;
     color: white;
 }
@@ -19,7 +33,7 @@ h2 {
 a.nav-pagelink  {
     font-family: "Exo", sans-serif; 
     color: white;
-    font-size: 20px;
+    font-size: 17px;
     font-weight: 500;
     padding: 20px;
 }
@@ -39,6 +53,7 @@ footer {
 }
 
 .Contact {
+    margin-top: 20px;
     font-family: "Exo", sans-serif;
     font-size: 15px;
     text-align: center;
@@ -47,9 +62,10 @@ footer {
 }
 
 .social-media {
+    margin-top: 20px;
     padding-bottom: 15px;
     text-align: center;
-    font-size: 30px;
+    font-size: 25px;
     color: white;
     width: 50px;
     height: 50px;

@@ -19,7 +19,7 @@
             <!----------------------Navbar------------------------->
             <nav class="navbar bg-light navbar-light navbar-expand-xl">
                <div class="headername">
-                  <h2 class="name">Movie Reviews</h2>
+                  <h3 class="name">Movie Reviews</h3>
                </div>
                <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" 
                   aria-expanded="false" aria-label="Toggle navigation">
@@ -31,10 +31,10 @@
                         <a class="nav-pagelink" href="{{ url_for('get_tasks') }}">Home</a>
                      </li>
                      <li class="nav-item mr-2 menu">
-                        <a class="nav-pagelink" href="#">Review</a>
+                        <a class="nav-pagelink" href="#">Add Review</a>
                      </li>
                      <li class="nav-item mr-2 menu">
-                        <a class="nav-pagelink" href="{{ url_for('login') }}">Login/Sign Up</a>
+                        <a class="nav-pagelink" href="{{ url_for('signup') }}">Login/Sign Up</a>
                      </li>
                   </ul>
                </div>
@@ -42,10 +42,16 @@
          </div>
     </header>
 
+    <section>
+        
+    </section>
 
-    {% block content %}
-    {% endblock %}
-
+    <main>
+        <div id="content">
+            {% block content %}
+            {% endblock %}
+        </div> 
+    </main>
       <!----------------------Footer------------------------->
       <footer class="container-fluid">
          <div class="row">
