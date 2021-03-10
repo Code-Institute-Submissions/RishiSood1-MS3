@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Exo:100,200,300,400,500,600,700|Exo:100,200,300,400,500,600,700');
 
 #content {
-    min-height: calc(120vh - 300px);
+    min-height: calc(110vh - 300px);
 }
 
 /*----------------------------------------header/navbar*/
@@ -22,6 +22,9 @@ header {
     margin-left: 15px;
     margin-top: 20px;
     margin-bottom: 20px;
+    color: #ffffff;
+}
+.navbar-toggler {
     color: #ffffff;
 }
 

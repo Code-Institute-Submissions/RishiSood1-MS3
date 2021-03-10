@@ -34,7 +34,10 @@
                         <a class="nav-pagelink" href="#">Add Review</a>
                      </li>
                      <li class="nav-item mr-2 menu">
-                        <a class="nav-pagelink" href="{{ url_for('signup') }}">Login/Sign Up</a>
+                        <a class="nav-pagelink" href="{{ url_for('login') }}">Login</a>
+                     </li>
+                     <li class="nav-item mr-2 menu">
+                        <a class="nav-pagelink" href="{{ url_for('signup') }}">Sign Up</a>
                      </li>
                   </ul>
                </div>
@@ -43,7 +46,20 @@
     </header>
 
     <section>
-        
+        {% with messages = get_flashed_messages() %}
+            {% if messages %}
+                <div class="text-center">
+                    <h3>Message/s:</h3>
+                {% for message in messages %}
+                    <div class="row">
+                        <div class="col">
+                            <h5 id="flash-mess">{{ message }}</h5>         
+                        </div>
+                    </div>
+                {% endfor %}
+                </div>
+            {% endif %}
+        {% endwith %}
     </section>
 
     <main>
