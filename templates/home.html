@@ -5,13 +5,14 @@
   <div class="card-header bg-transparent border-success">{{ review.title }}</div>
   <div class="card-body text-success">
     <p class="card-text">Year Released: {{ review.year_released }}</p>
+    <p class="card-text">Director: {{ review.director }}</p>
     <p class="card-text">Age Rating: {{ review.rating }}</p>
     <p class="card-text">Run Time: {{ review.run_time }}</p>
     <p class="card-text">Genre: {{ review.genre }}</p>
     <p class="card-text">Description:<br> 
         {{ review.description }}</p>
   </div>
-  <div class="card-footer bg-transparent border-success">{{ review.user_rating }}</div>
+  <div class="card-footer bg-transparent border-success">User Rating: {{ review.user_rating }}</div>
 </div>
     {% endfor %}
 {% endblock %}

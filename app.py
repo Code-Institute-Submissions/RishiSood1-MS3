@@ -25,6 +25,27 @@ def get_reviews():
     return render_template("home.html", reviews=reviews)
 
 
+@app.route("/new_reviews", methods=["GET", "POST"])
+def new_reviews():
+    if request.method == "POST":
+        movie_reviews = {
+            "movie_title": request.form.get("movie_title"),
+            "year_released": request.form.get("year_released"),
+            "director": request.form.get("director"),
+            "age_rating": request.form.get("age_rating"),
+            "run_time": request.form.get("run_time"),
+            "genre": request.form.get("genre"),
+            "description": request.form.get("description"),
+            "user_rating": request.form.get("user_rating"),
+            "image": request.form.get("image")
+        }
+
+        mongo.db.reviews.insert_one(movie_reviews)
+        flash("Review Added!")
+        return redirect(url_for("get_reviews"))
+    return render_template("new_review.html")
+
+
 @app.route("/signup", methods=["GET", "POST"])
 def signup():
     if request.method == "POST":

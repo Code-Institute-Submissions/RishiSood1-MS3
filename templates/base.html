@@ -32,7 +32,7 @@
                      </li>
                      {% if session.user %}
                         <li class="nav-item mr-2 menu">
-                            <a class="nav-pagelink" href="#">Add Review</a>
+                            <a class="nav-pagelink" href="{{ url_for('new_reviews') }}">Add Review</a>
                         </li>
                         <li class="nav-item mr-2 menu">
                             <a class="nav-pagelink" href="{{ url_for('logout') }}">Logout</a>

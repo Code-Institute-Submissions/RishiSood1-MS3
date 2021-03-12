@@ -51,6 +51,12 @@ a.nav-pagelink  {
     margin-top: 25px;
 }
 
+.title {
+    text-align: center;
+    font-family: "Exo", sans-serif;
+    padding-top: 20px;
+}
+
 /*----------------------------------------Footer*/
 
 footer {

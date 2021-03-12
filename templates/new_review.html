@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+{% block content %}
+    <div class="card">
+        <h2 class="title">Add Review</h2>
+        <div class="card-body">
+            <form style="max-width: 40em;" class="mx-auto" method="POST" action="{{ url_for('new_reviews') }}">
+                <div class="form-group mx-auto">
+                    <label for="MovieName">Movie Title</label>
+                    <input type="text" class="form-control" id="movie_title" name="movie_title">
+                </div>
+                <div class="form-group mx-auto">
+                    <label for="YearReleased">Year Released</label>
+                    <input type="text" class="form-control" id="year_released" name="year_released">
+                </div>
+                <div class="form-group mx-auto">
+                    <label for="Director">Director</label>
+                    <input type="text" class="form-control" id="director" name="director">
+                </div>
+                <div class="form-group">
+                    <label for="AgeRating">Age Rating</label>
+                        <select class="form-control" id="age_rating" name="age_rating">
+                            <option>U</option>
+                            <option>PG</option>
+                            <option>12</option>
+                            <option>15</option>
+                            <option>18</option>
+                        </select>
+                </div>
+                <div class="form-group mx-auto">
+                    <label for="RunTime">Run Time</label>
+                    <input type="text" class="form-control" id="run_time" name="run_time">
+                </div>
+                <div class="form-group mx-auto">
+                    <label for="Genre">Genre</label>
+                    <input type="text" class="form-control" id="genre" name="genre">
+                </div>
+                <div class="form-group">
+                    <label for="Description">Description</label>
+                    <textarea class="form-control" id="description" name="description" rows="4"></textarea>
+                </div>
+                <div class="form-group mx-auto">
+                    <label for="Rating">User Rating</label>
+                    <input type="text" class="form-control" id="user_rating" name="user_rating">
+                </div>
+                <div class="form-group mx-auto">
+                    <label for="Image URL">Image URL</label>
+                    <input type="text" class="form-control" id="image" name="image">
+                </div>
+            <button class="btn btn-primary" type="submit">Submit</button>
+            </form> 
+        </div>
+    </div>  
+
+
+
+{% endblock %}
