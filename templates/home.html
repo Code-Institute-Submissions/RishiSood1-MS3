@@ -1,13 +1,17 @@
 {% extends "base.html" %}
 {% block content %}
     {%  for review in reviews %}
-        {{ review.title }}<br>
-        {{ review.year_released }}<br>
-        {{ review.rating }}<br>
-        {{ review.run_time }}<br>
-        {{ review.genre }}<br>
-        {{ review.description }}<br>
-        {{ review.user_rating }}<br>
+<div class="card border-success mb-3 mx-auto review" style="max-width: 40rem;">
+  <div class="card-header bg-transparent border-success">{{ review.title }}</div>
+  <div class="card-body text-success">
+    <p class="card-text">Year Released: {{ review.year_released }}</p>
+    <p class="card-text">Age Rating: {{ review.rating }}</p>
+    <p class="card-text">Run Time: {{ review.run_time }}</p>
+    <p class="card-text">Genre: {{ review.genre }}</p>
+    <p class="card-text">Description:<br> 
+        {{ review.description }}</p>
+  </div>
+  <div class="card-footer bg-transparent border-success">{{ review.user_rating }}</div>
+</div>
     {% endfor %}
-
 {% endblock %}
