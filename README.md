@@ -45,11 +45,11 @@ Throughout the website, I decided to use 1 font as I thought I would look better
 * [GitHub](https://github.com/) – I used GitHub to create the repository
 * [Git](https://en.wikipedia.org/wiki/Git) -  Used for version control as well as storing any changes I made to the code. 
 * [Gitpod](https://www.gitpod.io/) -  This was the IDE I used for the project
-* [Heroku] (https://www.heroku.com/) - Heroku was used to host the app
-* [MongoDB] (https://www.mongodb.com/) - Database that was used in the project
-* [Flask] (https://flask.palletsprojects.com/en/1.1.x/) - Framework used to help build the site
-* [Werkzeug] (https://werkzeug.palletsprojects.com/en/1.0.x/) - Used for user authentication, the login, sign - up and logout features
-* [Jinja] (https://jinja.palletsprojects.com/en/2.11.x/) - Templating language to help builf the site
+* [Heroku](https://www.heroku.com/) - Heroku was used to host the app
+* [MongoDB](https://www.mongodb.com/) - Database that was used in the project
+* [Flask](https://flask.palletsprojects.com/en/1.1.x/) - Framework used to help build the site
+* [Werkzeug](https://werkzeug.palletsprojects.com/en/1.0.x/) - Used for user authentication, the login, sign - up and logout features
+* [Jinja](https://jinja.palletsprojects.com/en/2.11.x/) - Templating language to help builf the site
 * [Figma](https://www.figma.com/) – Used to create the wireframes which provided me with the basic design of the website. 
 * [W3C Markup Validation Service](https://validator.w3.org/) – I used this to validate my HTML to see if there were any errors in my HTML. 
 * [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/) - I used this to validate my CSS to see if there were any errors in my CSS.
