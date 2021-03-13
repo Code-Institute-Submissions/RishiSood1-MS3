@@ -20,17 +20,24 @@ users = mongo.db.users
 
 
 @app.route("/")
-@app.route("/get_reviews")
-def get_reviews():
+@app.route("/home")
+def home():
     reviews = mongo.db.reviews.find()
-    return render_template("movies.html", reviews=reviews)
+    return render_template("home.html", reviews=reviews)
+
+
+@app.route("/movie_details", methods=["GET", "POST"])
+def movie_details():
+    newreviewid = request.args.get('review_id', type=ObjectId)
+    review = mongo.db.reviews.find_one({"_id": newreviewid})
+    return render_template("movies.html", review=review)
 
 
 @app.route("/new_reviews", methods=["GET", "POST"])
 def new_reviews():
     if request.method == "POST":
         movie_reviews = {
-            "movie_title": request.form.get("movie_title"),
+            "title": request.form.get("title"),
             "year_released": request.form.get("year_released"),
             "director": request.form.get("director"),
             "age_rating": request.form.get("age_rating"),
@@ -67,6 +74,13 @@ def edit_review(review_id):
 
     review = mongo.db.reviews.find_one({"_id": ObjectId(review_id)})
     return render_template("edit_review.html", reviews=review)
+
+
+@app.route("/delete_review/<review_id>")
+def delete_review(review_id):
+    mongo.db.reviews.remove({"_id": ObjectId(review_id)})
+    flash("Review Deleted!")
+    return redirect(url_for("get_reviews"))
 
 
 @app.route("/signup", methods=["GET", "POST"])
