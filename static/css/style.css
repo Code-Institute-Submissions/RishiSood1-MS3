@@ -41,7 +41,7 @@ a.nav-pagelink  {
     padding: 20px;
 }
 
-/*----------------------------------------Footer*/
+/*----------------------------------------Templates*/
 
 .card-header {
     font-family: "Exo", sans-serif; 
@@ -56,6 +56,20 @@ a.nav-pagelink  {
     font-family: "Exo", sans-serif;
     padding-top: 20px;
 }
+
+img {
+    max-width: 250px;
+    max-height: 200px;
+    padding-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 
 /*----------------------------------------Footer*/
 

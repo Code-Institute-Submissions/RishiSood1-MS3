@@ -1,20 +1,20 @@
 {% extends "base.html" %}
 {% block content %}
     <div class="card">
-        <h2 class="title">Add Review</h2>
+        <h2 class="title">Edit Review</h2>
         <div class="card-body">
-            <form style="max-width: 40em;" class="mx-auto" method="POST" action="{{ url_for('new_reviews') }}">
+            <form style="max-width: 40em;" class="mx-auto" method="POST" action="{{ url_for('edit_review', review_id=review._id) }}">
                 <div class="form-group mx-auto">
                     <label for="MovieName">Movie Title</label>
-                    <input type="text" class="form-control" id="movie_title" name="movie_title">
+                    <input type="text" value="{{ review.title }}" class="form-control" id="movie_title" name="movie_title">
                 </div>
                 <div class="form-group mx-auto">
                     <label for="YearReleased">Year Released</label>
-                    <input type="text" class="form-control" id="year_released" name="year_released">
+                    <input type="text" value="{{ review.year_released }}" class="form-control" id="year_released" name="year_released">
                 </div>
                 <div class="form-group mx-auto">
                     <label for="Director">Director</label>
-                    <input type="text" class="form-control" id="director" name="director">
+                    <input type="text" value="{{ review.director }}" class="form-control" id="director" name="director">
                 </div>
                 <div class="form-group">
                     <label for="AgeRating">Age Rating</label>
@@ -28,25 +28,27 @@
                 </div>
                 <div class="form-group mx-auto">
                     <label for="RunTime">Run Time</label>
-                    <input type="text" class="form-control" id="run_time" name="run_time">
+                    <input type="text" value="{{ review.run_time }}" class="form-control" id="run_time" name="run_time">
                 </div>
                 <div class="form-group mx-auto">
                     <label for="Genre">Genre</label>
-                    <input type="text" class="form-control" id="genre" name="genre">
+                    <input type="text" value="{{ review.genre }}" class="form-control" id="genre" name="genre">
                 </div>
                 <div class="form-group">
                     <label for="Description">Description</label>
-                    <textarea class="form-control" id="description" name="description" rows="4"></textarea>
+                    <textarea class="form-control" id="description" name="description" rows="4">
+                    {{- review.description -}}
+                    </textarea>
                 </div>
                 <div class="form-group mx-auto">
                     <label for="Rating">User Rating</label>
-                    <input type="text" class="form-control" id="user_rating" name="user_rating">
+                    <input type="text" value="{{ review.user_rating }}" class="form-control" id="user_rating" name="user_rating">
                 </div>
                 <div class="form-group mx-auto">
                     <label for="Image URL">Image URL</label>
-                    <input type="text" class="form-control" id="image" name="image">
+                    <input type="text" value="{{ review.image }}" class="form-control" id="image" name="image">
                 </div>
-            <button class="btn btn-primary" type="submit">Submit</button>
+            <button class="btn btn-primary" type="submit">Edit Review</button>
             </form> 
         </div>
     </div>  
