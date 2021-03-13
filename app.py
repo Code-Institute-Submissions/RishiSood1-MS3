@@ -50,7 +50,7 @@ def new_reviews():
 
         mongo.db.reviews.insert_one(movie_reviews)
         flash("Review Added!")
-        return redirect(url_for("get_reviews"))
+        return redirect(url_for("home"))
     return render_template("new_review.html")
 
 
