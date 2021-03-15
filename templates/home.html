@@ -1,8 +1,14 @@
 {% extends "base.html" %}
 {% block content %}
+    <div class="row">
         {%  for review in reviews %}
 
-        <a href="{{ url_for('movie_details', review_id=review._id) }}"><img src="{{ review.image }}" class="poster"></a>
+    
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <a href="{{ url_for('movie_details', review_id=review._id) }}"><img src="{{ review.image }}" class="poster"></a>
+            </div>
+
 
         {% endfor %}
+    </div>
 {% endblock %}

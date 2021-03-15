@@ -4,6 +4,10 @@
     min-height: calc(110vh - 300px);
 }
 
+body {
+    text-align: center;
+}
+
 /*----------------------------------------header/navbar*/
 
 header {
@@ -62,6 +66,16 @@ img {
     max-height: 200px;
     padding-top: 20px;
     padding-bottom: 20px;
+    
+}
+
+.edit {
+    font-family: "Exo", sans-serif;
+}
+
+.delete {
+    font-family: "Exo", sans-serif;
+    background-color: red;
 }
 
 /*----------------------------------------Footer*/
