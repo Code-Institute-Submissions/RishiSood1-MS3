@@ -80,7 +80,7 @@ def edit_review(review_id):
 def delete_review(review_id):
     mongo.db.reviews.remove({"_id": ObjectId(review_id)})
     flash("Review Deleted!")
-    return redirect(url_for("get_reviews"))
+    return redirect(url_for("home"))
 
 
 @app.route("/signup", methods=["GET", "POST"])
