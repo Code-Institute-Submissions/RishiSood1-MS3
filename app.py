@@ -73,7 +73,7 @@ def edit_review(review_id):
         flash("Review Updated!")
 
     review = mongo.db.reviews.find_one({"_id": ObjectId(review_id)})
-    return render_template("edit_review.html", reviews=review)
+    return render_template("edit_review.html", review=review)
 
 
 @app.route("/delete_review/<review_id>")

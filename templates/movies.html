@@ -11,10 +11,10 @@
                 <p class="card-text">Description:<br> 
                     {{ review.description }}</p>
             </div>
-    <div class="card-footer bg-transparent border-success">User Rating: {{ review.user_rating }}</div>
+    <div class="card-footer bg-transparent border-success">User Rating: {{ review.user_rating }} <span class="star-icon"><i class="fas fa-star"></i></span></div>
     </div>
 
-    <a href="#" class="btn btn-primary edit">Edit</a>
+    <a href="{{ url_for('edit_review', review_id=review._id) }}" class="btn btn-primary edit">Edit</a>
     <a href="#" class="btn btn-primary delete">Delete</a>
 
 {% endblock %}
