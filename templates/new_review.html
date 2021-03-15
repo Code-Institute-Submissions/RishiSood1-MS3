@@ -5,7 +5,7 @@
         <div class="card-body">
             <form style="max-width: 40em;" class="mx-auto" method="POST" action="{{ url_for('new_reviews') }}">
                 <div class="form-group mx-auto">
-                    <label for="MovieName">Movie Title</label>
+                    <label for="movie_title">Movie Title</label>
                     <input type="text" class="form-control" id="movie_title" name="movie_title">
                 </div>
                 <div class="form-group mx-auto">
@@ -17,7 +17,7 @@
                     <input type="text" class="form-control" id="director" name="director">
                 </div>
                 <div class="form-group">
-                    <label for="AgeRating">Age Rating</label>
+                    <label for="age_rating">Age Rating</label>
                         <select class="form-control" id="age_rating" name="age_rating">
                             <option>U</option>
                             <option>PG</option>
