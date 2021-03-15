@@ -37,7 +37,7 @@ def movie_details():
 def new_reviews():
     if request.method == "POST":
         movie_reviews = {
-            "title": request.form.get("title"),
+            "movie_title": request.form.get("movie_title"),
             "year_released": request.form.get("year_released"),
             "director": request.form.get("director"),
             "age_rating": request.form.get("age_rating"),
