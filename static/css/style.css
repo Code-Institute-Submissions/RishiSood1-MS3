@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Exo:100,200,300,400,500,600,700|Exo:100,200,300,400,500,600,700');
 
 #content {
-    min-height: calc(110vh - 300px);
+    min-height: calc(115vh - 300px);
 }
 
 body {
