@@ -130,7 +130,7 @@ How to deploy your project on Heroku:
 * Find the deployment section in your Heroku app and then make sure you select Github for automatic deployment. This will ensure that whenever you push your work to github, the app will automatically be deployed to Heroku.
 * After this, you need to select your github user and find the repository.
 * Then enter the necessary convig vars and click deploy branch. Once the app is ready, click view app, this will open the app in a new tab.
-* Finally, every time you push your work in gitpod, the heroku will automatically build the app.
+* Finally, every time you push your work in gitpod, Heroku will automatically build the app.
 
 
 ## Credits
