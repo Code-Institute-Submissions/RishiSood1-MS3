@@ -1,6 +1,6 @@
 # Milestone Project 3
 
-Live link to my website: [https://ms3-movie-reviews.herokuapp.com/]
+Live link to my website: https://ms3-movie-reviews.herokuapp.com/
 
 This is my third project for Code Institute. I have created a movie reviews website which allows users to add their own reviews on movies they have seen. They are also able to view reviews added by other users.
 
@@ -18,15 +18,15 @@ This project is for anyone with a love of movies. Users can create, read, update
 
 ### Wireframes
 
-<h5 align="center"><img src="wireframes/AddReview.JPG"></h5>
-<h5 align="center"><img src="wireframes/Homepage.JPG"></h5>
-<h5 align="center"><img src="wireframes/Login.JPG"></h5>
-<h5 align="center"><img src="wireframes/MovieBasedOnSearch.JPG"></h5>
-<h5 align="center"><img src="wireframes/SignUp.JPG"></h5>
+<h5 align="center"><img src="documentation/wireframes/AddReview.JPG"></h5>
+<h5 align="center"><img src="documentation/wireframes/Homepage.JPG"></h5>
+<h5 align="center"><img src="documentation/wireframes/Login.JPG"></h5>
+<h5 align="center"><img src="documentation/wireframes/MovieBasedOnSearch.JPG"></h5>
+<h5 align="center"><img src="documentation/wireframes/SignUp.JPG"></h5>
 
 ### Database
 
-
+<h5 align="center"><img src="documentation/ERD.JPG"></h5>
 
 ## Features 
 
