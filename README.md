@@ -97,7 +97,7 @@ All my code passed the validation service without any errors
 
 <h4 align="center"><img src="documentation/CSSValidator.JPG"></h4>
 <h4 align="center"><img src="documentation/HTMLValidator.JPG"></h4>
-h4 align="center"><img src="documentation/PEP8.JPG"></h4>
+<h4 align="center"><img src="documentation/PEP8.JPG"></h4>
 
 ### Testing Methods 
 
