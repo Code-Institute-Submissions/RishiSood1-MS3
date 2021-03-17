@@ -26,10 +26,9 @@ def home():
     return render_template("home.html", reviews=reviews)
 
 
-@app.route("/movie_details", methods=["GET", "POST"])
-def movie_details():
-    newreviewid = request.args.get('review_id', type=ObjectId)
-    review = mongo.db.reviews.find_one({"_id": newreviewid})
+@app.route("/movie_details/<review_id>", methods=["GET", "POST"])
+def movie_details(review_id):
+    review = mongo.db.reviews.find_one({"_id": ObjectId(review_id)})
     return render_template("movies.html", review=review)
 
 
