@@ -1,5 +1,7 @@
 # Milestone Project 3
 
+Live link to my website: [https://ms3-movie-reviews.herokuapp.com/]
+
 This is my third project for Code Institute. I have created a movie reviews website which allows users to add their own reviews on movies they have seen. They are also able to view reviews added by other users.
 
 The landing page consists of a search bar which allows users to search movies by name, genre and the year it was released. Also, on the landing page are all the other reviews which have been added on to the website. We have a login page which allows registered users to login into the website. Once their details are in the table, this will allow users to login to the website. Once the user is logged in, the logout feature will appear in the navigation bar. The reason for this is because we don’t the logout feature to be in the navigation bar all the time, we only want it to appear once a user is logged in. Another feature that only appears when a user is logged in, is the add review feature. Once clicked, it will lead the user to the add review page. Once they have added the review, the data will automatically be inputted into the database and will appear on the landing page with the other reviews.
