@@ -80,8 +80,14 @@ img {
     background-color: red;
 }
 
+.reset {
+    font-family: "Exo", sans-serif;
+    background-color: red;  
+}
+
 .search {
-    padding-top: 20px;
+    margin-top: 20px;
+    padding-bottom: 20px;
 }
 
 /*----------------------------------------Footer*/
