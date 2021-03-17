@@ -12,7 +12,8 @@ This project is for anyone with a love of movies. Users can create, read, update
 
 ### User Stories
 
-* As a movie critic I want to be able to add a new review about a movie. I also want to be able to update or delete my review if necessary. 
+* As a movie critic I want to be able to add a new review about a movie. 
+* I also want to be able to update or delete my review if necessary. 
 * As a person who watches movies, I want to be able to read reviews about upcoming movies.  
 * As a person who is involved in the production of movies, I want to be able to see what other people think of the movie I have worked on. 
 
@@ -62,7 +63,6 @@ Throughout the website, I decided to use 1 font as I thought I would look better
 * [Heroku](https://www.heroku.com/) - Heroku was used to host the app
 * [MongoDB](https://www.mongodb.com/) - Database that was used in the project
 * [Flask](https://flask.palletsprojects.com/en/1.1.x/) - Framework used to help build the site
-* [Werkzeug](https://werkzeug.palletsprojects.com/en/1.0.x/) - Used for user authentication, the login, sign - up and logout features
 * [Jinja](https://jinja.palletsprojects.com/en/2.11.x/) - Templating language to help builf the site
 * [Figma](https://www.figma.com/) – Used to create the wireframes which provided me with the basic design of the website. 
 * [W3C Markup Validation Service](https://validator.w3.org/) – I used this to validate my HTML to see if there were any errors in my HTML. 
@@ -74,11 +74,13 @@ Navbar – The navbar appears at the top of the screen and all the page links ar
 
 Footer – The Footer appears at the bottom of each page. The social media links are all working, and it leads to my social media pages. Similar to the navbar, the footer isn’t fixed to the bottom of the screen so the users have to scroll back down to the bottom of the screen to view the footer contents.
 
-Login / Sign Up Form - To test these fetaures, I signed up to the website. As expected, there were no issues. My username was stored in the database, along with a hashed version of my password, meaning I couldnt see the actual password I had typed in. 
+Sign Up Form - To test this fetaure, I signed up to the website. As expected, there were no issues. My username was stored in the database, along with a hashed version of my password, meaning I couldnt see the actual password I had typed in. After I had created my account, I tried to create another account with the same username. I expected that an flash message would appear saying "Username already exists!". As expected, the flash message appeared. 
 
-Logout - The last of the user authentication features, was the logout function. This worked as expected, the user is able to logout of the site. When the user is logged out, they are unable to add a new review. They can only view them. 
+Login Form - When the user logs in, a flash massage should appear saying "Welcome, [username]. To test this I first logged in with my personal username. The result was as expected. The flash message sais "Welcome, RishiSood". I tested this again woith another account and the same flash message appeared, however the username had changed. Thus showing that the code was being executed correctly. Another test I did was to see what would happen if the wring password was entered. I expected a flash message to appear saying "Incorrect Username/Password". As expected, the flash message appeared, showing that the code written in the app.py had been executed. With the 
 
-Add Review Form – To test the form, I entered data into all the field, the result of this was that all the data that was entered, appeared in the MongoDB database as expected. 
+Logout - The last of the user authentication features, was the logout function. This worked as expected, the user is able to logout of the site. When the user is logged out, a flash message appears saying you have been logged out and thay return to the login page. Once a user is logged out they are unable to add a new review. They can only view them. 
+
+Add Review Form – To test the form, I entered data into all the fields, the expected result was that the user would be taken back to the homepage and the new movie image would appear on the homepage along with a flash message stating "Review Added!" the result of this was that all the data that was entered, appeared in the MongoDB database as expected as well as the image appearing on the homepage along with the flash message. 
 
 Buttons - To test the buttons, I clicked each one to see if they perfomed the correct action. I typed a movie in the search bar and clicked the search button. Once clicked, the movie which I searched for appeared on the screen. I then clicked the reset button, once clicked, all the other movies re-appeared on the homepage. The next button I tested was the add review button. Once clicked, this led me to a form in which I can add another review. To test the edit review button, I again clicked on the button and this led me to another form in which I could edit a review. Finally, the last button was the delete button. When I clicked this button the review that I was on was deleted from the database and the homepage. 
 
@@ -89,11 +91,13 @@ I used the following validation services to validate my code:
 
 * W3C Markup Validation Service 
 * W3C CSS Validation Service
+* PEP8 checker
 
-Both my CSS and HTML passed the validation service without any errors
+All my code passed the validation service without any errors
 
 <h4 align="center"><img src="documentation/CSSValidator.JPG"></h4>
 <h4 align="center"><img src="documentation/HTMLValidator.JPG"></h4>
+h4 align="center"><img src="documentation/PEP8.JPG"></h4>
 
 ### Testing Methods 
 
