@@ -85,6 +85,15 @@ img {
     background-color: red;  
 }
 
+.enter {
+    font-family: "Exo", sans-serif;
+    background-color: green;
+}
+
+.update {
+    font-family: "Exo", sans-serif;
+}
+
 .search {
     margin-top: 20px;
     padding-bottom: 20px;
