@@ -18,6 +18,12 @@ This project is for anyone with a love of movies. Users can create, read, update
 
 ### Wireframes
 
+<h5 align="center"><img src="wireframes/AddReview.JPG"></h5>
+<h5 align="center"><img src="wireframes/Homepage.JPG"></h5>
+<h5 align="center"><img src="wireframes/Login.JPG"></h5>
+<h5 align="center"><img src="wireframes/MovieBasedOnSearch.JPG"></h5>
+<h5 align="center"><img src="wireframes/SignUp.JPG"></h5>
+
 ### Database
 
 
@@ -102,6 +108,30 @@ I then used the developer tools on Google Chrome to test the website on differen
 * iPhone X
 * iPad
 * Moto G4
+
+## Deployment
+
+I deployed my project through Heroku. 
+
+How to run this project locally to clone this project from GitHub:
+
+* Firstly, you need to go to github and search for the repository. Once found, then click "Clone or download".
+* In the Clone with HTTPs section, copy the clone URL for the repository.
+* Then in your local IDE open Git Bash.
+* After this, you should change the current working directory to the location where you want the cloned directory to
+* In the terminal type in git clone. You should then paste in the URL
+* Once you have clicked Enter, your local clone will be ready.
+
+How to deploy your project on Heroku: 
+
+* Firstly, go onto the Heroku website and sign in.
+* Then click on the create new app option and choose your region.
+* You must make sure that your project has both a Procfile and a requirements.txt file otherwise your app will not run.
+* Find the deployment section in your Heroku app and then make sure you select Github for automatic deployment. This will ensure that whenever you push your work to github, the app will automatically be deployed to Heroku.
+* After this, you need to select your github user and find the repository.
+* Then enter the necessary convig vars and click deploy branch. Once the app is ready, click view app, this will open the app in a new tab.
+* Finally, every time you push your work in gitpod, the heroku will automatically build the app.
+
 
 ## Credits
 
