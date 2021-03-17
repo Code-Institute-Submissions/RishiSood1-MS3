@@ -45,7 +45,8 @@ def new_reviews():
             "genre": request.form.get("genre"),
             "description": request.form.get("description"),
             "user_rating": request.form.get("user_rating"),
-            "image": request.form.get("image")
+            "image": request.form.get("image"),
+            "author": session["user"]
         }
 
         mongo.db.reviews.insert_one(movie_reviews)
@@ -81,6 +82,13 @@ def delete_review(review_id):
     mongo.db.reviews.remove({"_id": ObjectId(review_id)})
     flash("Review Deleted!")
     return redirect(url_for("home"))
+
+
+@app.route("/search_movie", methods=["GET", "POST"])
+def search_movie():
+    data = request.form.get("data")
+    reviews = mongo.db.reviews.find({"$text": {"$search": data}})
+    return render_template("home.html", reviews=reviews)
 
 
 @app.route("/signup", methods=["GET", "POST"])

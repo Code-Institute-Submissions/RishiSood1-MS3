@@ -1,13 +1,21 @@
 {% extends "base.html" %}
 {% block content %}
+<div class="row justify-content-center search">
+<form action="{{ url_for('search_movie') }}" method="POST" style="max-width: 40em;">
+    <div class="input-group">
+        <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search"
+            aria-describedby="search-addon" name="data"/>
+        <button type="submit" class="btn btn-primary">Search</button>
+        <a href="{{ url_for('home') }}" class="btn btn-primary Reset">Reset</a>
+    </div>
+</form>
+</div>
     <div class="row">
         {%  for review in reviews %}
-
-    
+   
             <div class="col-sm-6 col-md-4 col-lg-3">
                 <a href="{{ url_for('movie_details', review_id=review._id) }}"><img src="{{ review.image }}" class="poster"></a>
             </div>
-
 
         {% endfor %}
     </div>
